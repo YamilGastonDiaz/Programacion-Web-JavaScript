@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio #2</title>
+  </head>
+  <body>
+    <script>
+      let cont = 0;
+      for (let index = 0; index < 10; index++) {
+        let num = Math.floor(Math.random() * 50) + 1;
+
+        cont = cont + num;
+
+        document.write(`${num} </br>`);
+      }
+      document.write(
+        `el resultado de la suma de todos los numeros es: ${cont}`
+      );
+    </script>
+  </body>
+</html>

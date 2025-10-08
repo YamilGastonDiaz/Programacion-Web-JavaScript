@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio #5</title>
+  </head>
+  <body>
+    <script>
+      alert("Calificación de un estudiante");
+      const nota = Number(prompt("Ingrese la nota del estudiante (0-10):"));
+      if(nota === 10){
+        document.write("la clasificación es EXCELENTE");
+      }else if(nota <= 9 && nota >= 8){
+        document.write("la clasificación es BUENO");
+      }else if(nota <= 7 && nota >= 6){
+        document.write("la clasificación es REGULAR");
+      }else if(nota <= 5 && nota >= 0){
+        document.write("la clasificación es DESAPROBADO");
+    </script>
+  </body>
+</html>

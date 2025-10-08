@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio #7</title>
+  </head>
+  <body>
+    <script>
+      let ancho = parseInt(prompt("Ingrese el ancho que desea del tablero: "));
+      let altura = parseInt(
+        prompt("Ingrese la altura que desea del tablero: ")
+      );
+
+      for (let fila = 0; fila < altura; fila++) {
+        for (let columna = 0; columna < ancho; columna++) {
+          document.write(`*`);
+        }
+        document.write(`</br>`);
+      }
+    </script>
+  </body>
+</html>

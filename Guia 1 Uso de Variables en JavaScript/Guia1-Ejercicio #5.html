@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio #5</title>
+  </head>
+  <body>
+    <script>
+      alert("Calcula la cantidad de horas trabajadas");
+      const horaIngreso = Number(
+        prompt("Por favor, ingresa la hora de ingreso (en formato 24 horas):")
+      );
+      const horaSalida = Number(
+        prompt("Por favor, ingresa la hora de salida (en formato 24 horas):")
+      );
+      const horasTrabajadas = horaSalida - horaIngreso;
+      document.write("Las horas trabajadas son: " + horasTrabajadas);
+    </script>
+  </body>
+</html>

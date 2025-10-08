@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio #7</title>
+  </head>
+  <body>
+    <script>
+      alert("Cálculo de tazas de café");
+      const cantidadMililitros = Number(
+        prompt("Ingrese la cantidad de mililitros de café en la cafeteraa:")
+      );
+      const capacidadTaza = Number(
+        prompt("Ingrese la capacidad de la taza en mililitros:")
+      );
+      const numeroTazas = Math.floor(cantidadMililitros / capacidadTaza);
+      document.write(
+        "El número de tazas que se pueden llenar es: " + numeroTazas + "<br>"
+      );
+
+      document.write(
+        "El sobrante de café es: " +
+          (cantidadMililitros % capacidadTaza) +
+          " ml"
+      );
+    </script>
+  </body>
+</html>

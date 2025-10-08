@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio #4</title>
+  </head>
+  <body>
+    <script>
+      alert("Clasificación de un triángulo");
+      const ladoA = Number(prompt("Ingrese el valor del lado A:"));
+      const ladoB = Number(prompt("Ingrese el valor del lado B:"));
+      const ladoC = Number(prompt("Ingrese el valor del lado C:"));
+
+      if (ladoA === ladoB && ladoB === ladoC) {
+        document.write("El triángulo es equilátero.");
+      } else if (ladoA === ladoB || ladoA === ladoC || ladoB === ladoC) {
+        document.write("El triángulo es isósceles.");
+      } else {
+        document.write("El triángulo es escaleno.");
+      }
+    </script>
+  </body>
+</html>
