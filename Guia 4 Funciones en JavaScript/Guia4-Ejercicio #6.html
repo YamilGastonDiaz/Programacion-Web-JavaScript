@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function calcularPrecio(precio, descuento = 10) {
+        const resultado = (precio * (100 - descuento)) / 100;
+
+        return resultado;
+      }
+
+      const precio = parseFloat(prompt("Ingrese el precio: "));
+      const descuento = prompt("Ingrese el descuento: ");
+
+      const ingreso = descuento !== "" ? parseInt(descuento) : undefined;
+
+      document.writeln(
+        `El precio final es: ${calcularPrecio(precio, ingreso)}`
+      );
+    </script>
+  </body>
+</html>

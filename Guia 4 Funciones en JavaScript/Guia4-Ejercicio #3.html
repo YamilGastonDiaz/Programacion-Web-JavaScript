@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function dibujarCuadrado(alto, ancho) {
+        figura = "";
+        for (let columna = 0; columna < alto; columna++) {
+          for (let fila = 0; fila < ancho; fila++) {
+            figura += `*`;
+          }
+          figura += `</br>`;
+        }
+        return figura;
+      }
+
+      const alto = parseInt(
+        prompt("Ingrease el alto para dibujar el cuadrado: ")
+      );
+      const ancho = parseInt(
+        prompt("Ingrease el ancho para dibujar el cuadrado: ")
+      );
+
+      document.writeln(dibujarCuadrado(alto, ancho));
+    </script>
+  </body>
+</html>
